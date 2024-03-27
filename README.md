@@ -1,6 +1,7 @@
 # vscode-touchbar-extension
-This is a fork of touchbar helper for Flutter. I liked it very much but it lacked some things that I would have liked to have so I forked it and added those. It's not perfect but it's helpful.. 
+This is a fork of touchbar helper for Flutter. I liked it very much but it lacked some things that I would have liked to have so I forked it and added those. 
 Read the features bellow ⬇
+
 
 ## Features
 ### Flutter 
