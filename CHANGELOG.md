@@ -8,4 +8,4 @@
 - Changed flutter build emojis
 - Added Git Stash
 
-### Forked with all previous updates from [Flutter Touchbar Helper](https://github.com/yusriltakeuchi/vscode-touchbar-extension)
+### Forked with all previous updates from [Flutter Touchbar Helper](https://github.com/yusriltakeuchi/flutter-touchbar-helper)
