@@ -1,36 +1,38 @@
-# flutter-touchbar-helper
-This is the touchbar helper for Flutter, so you can save your time to doing some action like flutter clean and build. And this is also include with git push and commit.
-
-![Screenshot Main](https://leeyurani.com/Screenshot-1.png)
-![Screenshot Git](https://leeyurani.com/Screenshot-2.png)
-![Screenshot Tools](https://leeyurani.com/Screenshot-3.png)
-![Screenshot Build](https://leeyurani.com/Screenshot-4.png)
+# vscode-touchbar-extension
+This is a fork of touchbar helper for Flutter. I liked it very much but it lacked some things that I would have liked to have so I forked it and added those. It's not perfect but it's helpful.. 
+Read the features bellow ⬇
 
 ## Features
+### Flutter 
 - Flutter Clean
+- Flutter Pub Get
 - Flutter Build Single APK
 - Flutter Build Appbundle
 - Flutter Build Split per ABI
 - Flutter DevTools
+### Git
 - Git Commit
 - Git Push
+- Git Stash
+
+<!-- 
+![Screenshot Main]("")
+![Screenshot Git]("")
+![Screenshot Tools]("")
+![Screensho𐬇t Build]("") -->
+
 
 ## Release Notes
 
-This is the release notes
+### 1.0.5
+- Added Flutter pub get button under FlutterTools category
+- Updated md files to represent these recent changes that I made
 
-### 1.0.3
-- Update grouping tools
+### 1.0.4
+- Changed flutter build emojis
+- Added Git Stash
 
-### 1.0.2
-- Updating screenshot
+### Forked with all previous updates from [Flutter Touchbar Helper](https://github.com/yusriltakeuchi/vscode-touchbar-extension)
 
-### 1.0.1
-- Add DevTools
-- Grouping Clean & Devtools to Flutter Tools
 
-### 1.0.0
 
-Initial release of flutter-helper
-
-**Enjoy!**

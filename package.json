@@ -1,13 +1,29 @@
 {
-  "name": "flutter-touchbar-helper",
-  "displayName": "Flutter Touchbar Helper",
-  "description": "It's a touchbar helper to save time on cleaning and building flutter projects",
-  "version": "1.0.3",
-  "publisher": "leeyurani",
+  "name": "vscode-touchbar-extension",
+  "displayName": "VSCodeTouchbar Extension",
+  "description": "Flutter and Git commands. Fork of flutter-touchbar-tools",
+  "version": "1.0.5",
+  "publisher": "JustAdreamerFL",
+  "activationEvents": [
+    "onCommand:vscode-touchbar-extension.fluttertools",
+    "onCommand:vscode-touchbar-extension.flutterclean",
+    "onCommand:vscode-touchbar-extension.devtools",
+    "onCommand:vscode-touchbar-extension.flutterbuild",
+    "onCommand:vscode-touchbar-extension.git",
+    "onCommand:vscode-touchbar-extension.closetools",
+    "onCommand:vscode-touchbar-extension.closegit",
+    "onCommand:vscode-touchbar-extension.closebuild",
+    "onCommand:vscode-touchbar-extension.gitcommit",
+    "onCommand:vscode-touchbar-extension.gitpush",
+    "onCommand:vscode-touchbar-extension.gitstash",
+    "onCommand:vscode-touchbar-extension.build.singleapk",
+    "onCommand:vscode-touchbar-extension.build.singleappbundle",
+    "onCommand:vscode-touchbar-extension.build.splitabi"
+  ],
   "engines": {
     "vscode": "^1.52.0"
   },
-  "repository": "https://github.com/yusriltakeuchi/flutter-touchbar-helper",
+  "repository": "https://github.com/JustAdreamerFL/VS-Code-Touchbar-Extension",
   "categories": [
     "Other"
   ],
@@ -15,30 +31,17 @@
     "macbook pro",
     "touchbar",
     "flutter",
+    "git",
+    "tools",
+    "extension",
     "shortcuts",
+    "commands",
+    "development",
     "vscode",
     "visual studio code",
     "macbook",
     "developers",
     "touch bar"
-  ],
-  "activationEvents": [
-    "onLanguage:dart",
-    "workspaceContains:**/pubspec.yaml",
-    "workspaceContains:**/*.dart",
-    "onCommand:flutter-touchbar-helper.flutterclean",
-    "onCommand:flutter-touchbar-helper.flutterbuild",
-    "onCommand:flutter-touchbar-helper.git",
-    "onCommand:flutter-touchbar-helper.closegit",
-    "onCommand:flutter-touchbar-helper.closebuild",
-    "onCommand:flutter-touchbar-helper.gitcommit",
-    "onCommand:flutter-touchbar-helper.gitpush",
-    "onCommand:flutter-touchbar-helper.build.singleapk",
-    "onCommand:flutter-touchbar-helper.build.singleappbundle",
-    "onCommand:flutter-touchbar-helper.build.splitabi",
-    "onCommand:flutter-touchbar-helper.build.fluttertools",
-    "onCommand:flutter-touchbar-helper.build.closetools",
-    "onCommand:flutter-touchbar-helper.build.devtools"
   ],
   "main": "./out/extension.js",
   "contributes": {
@@ -63,122 +66,140 @@
     ],
     "commands": [
       {
-        "command": "flutter-touchbar-helper.fluttertools",
-        "title": "🧰 Flutter Tools"
-      },
-      {
-        "command": "flutter-touchbar-helper.flutterclean",
-        "title": "🗑️ Clean"
-      },
-      {
-        "command": "flutter-touchbar-helper.devtools",
-        "title": "🔥 DevTools"
-      },
-      {
-        "command": "flutter-touchbar-helper.flutterbuild",
-        "title": "🛠️ Flutter Build"
-      },
-      {
-        "command": "flutter-touchbar-helper.git",
+        "command": "vscode-touchbar-extension.git",
         "title": "🔗 Git"
       },
       {
-        "command": "flutter-touchbar-helper.closetools",
-        "title": " 🅧 "
-      },
-      {
-        "command": "flutter-touchbar-helper.closegit",
-        "title": " 🅧 "
-      },
-      {
-        "command": "flutter-touchbar-helper.closebuild",
-        "title": " 🅧 "
-      },
-      {
-        "command": "flutter-touchbar-helper.gitcommit",
+        "command": "vscode-touchbar-extension.gitcommit",
         "title": "📘 Commit"
       },
       {
-        "command": "flutter-touchbar-helper.gitpush",
+        "command": "vscode-touchbar-extension.gitpush",
         "title": "🚀 Push"
       },
       {
-        "command": "flutter-touchbar-helper.build.singleapk",
-        "title": "📄 APK"
+        "command": "vscode-touchbar-extension.gitstash",
+        "title": "📦 Stash"
       },
       {
-        "command": "flutter-touchbar-helper.build.singleappbundle",
-        "title": "📄 Bundle"
+        "command": "vscode-touchbar-extension.closetools",
+        "title": " 🅧 "
       },
       {
-        "command": "flutter-touchbar-helper.build.splitabi",
-        "title": "📑 Split"
+        "command": "vscode-touchbar-extension.fluttertools",
+        "title": "🧰 Flutter Tools"
+      },
+      {
+        "command": "vscode-touchbar-extension.devtools",
+        "title": "🔥 DevTools"
+      },
+      {
+        "command": "vscode-touchbar-extension.flutterclean",
+        "title": "🗑️ Clean"
+      },
+      {
+        "command": "vscode-touchbar-extension.flutterpubget",
+        "title": "🤲 Pub Get"
+      },
+      {
+        "command": "vscode-touchbar-extension.closegit",
+        "title": " 🅧 "
+      },
+      {
+        "command": "vscode-touchbar-extension.flutterbuild",
+        "title": "🛠️ Flutter Build"
+      },
+      {
+        "command": "vscode-touchbar-extension.build.singleapk",
+        "title": "👌 APK"
+      },
+      {
+        "command": "vscode-touchbar-extension.build.singleappbundle",
+        "title": "🖐️ Bundle"
+      },
+      {
+        "command": "vscode-touchbar-extension.build.splitabi",
+        "title": "🖖 Split"
+      },
+      {
+        "command": "vscode-touchbar-extension.closebuild",
+        "title": " 🅧 "
       }
     ],
     "menus": {
       "touchBar": [
         {
-          "command": "flutter-touchbar-helper.closebuild",
+          "command": "vscode-touchbar-extension.closebuild",
           "group": "tools",
           "when": "enableBuild"
         },
         {
-          "command": "flutter-touchbar-helper.closegit",
+          "command": "vscode-touchbar-extension.closegit",
           "group": "git-action",
           "when": "enableGit"
         },
         {
-          "command": "flutter-touchbar-helper.closetools",
+          "command": "vscode-touchbar-extension.closetools",
           "group": "tools",
           "when": "enableTools"
         },
         {
-          "command": "flutter-touchbar-helper.git",
+          "command": "vscode-touchbar-extension.git",
           "group": "gittools",
           "when": "!enableGit && !enableBuild && !enableTools"
         },
         {
-          "command": "flutter-touchbar-helper.gitcommit",
+          "command": "vscode-touchbar-extension.gitcommit",
           "group": "git-action",
           "when": "enableGit"
         },
         {
-          "command": "flutter-touchbar-helper.gitpush",
+          "command": "vscode-touchbar-extension.gitpush",
           "group": "git-action",
           "when": "enableGit"
         },
         {
-          "command": "flutter-touchbar-helper.fluttertools",
+          "command": "vscode-touchbar-extension.gitstash",
+          "group": "git-action",
+          "when": "enableGit"
+        },
+        {
+          "command": "vscode-touchbar-extension.fluttertools",
           "group": "tools",
           "when": "!enableBuild && !enableGit && !enableTools"
         },
         {
-          "command": "flutter-touchbar-helper.flutterclean",
+          "command": "vscode-touchbar-extension.flutterclean",
           "group": "tools",
           "when": "enableTools"
         },
         {
-          "command": "flutter-touchbar-helper.devtools",
+          "command": "vscode-touchbar-extension.flutterpubget",
           "group": "tools",
           "when": "enableTools"
         },
         {
-          "command": "flutter-touchbar-helper.flutterbuild",
+          "command": "vscode-touchbar-extension.devtools",
+          "group": "tools",
+          "when": "enableTools"
+        },
+        {
+          "command": "vscode-touchbar-extension.flutterbuild",
           "group": "tools",
           "when": "!enableBuild && !enableGit && !enableTools"
         },
         {
-          "command": "flutter-touchbar-helper.build.singleapk",
+          "command": "vscode-touchbar-extension.build.singleapk",
           "group": "tools",
           "when": "enableBuild"
         },
         {
-          "command": "flutter-touchbar-helper.build.singleappbundle",
+          "command": "vscode-touchbar-extension.build.singleappbundle",
           "group": "tools",
           "when": "enableBuild"
         },
         {
-          "command": "flutter-touchbar-helper.build.splitabi",
+          "command": "vscode-touchbar-extension.build.splitabi",
           "group": "tools",
           "when": "enableBuild"
         }
@@ -205,6 +226,7 @@
     "glob": "^7.1.6",
     "mocha": "^8.1.3",
     "typescript": "^4.1.2",
+    "vscode": "^1.1.37",
     "vscode-test": "^1.4.1"
   }
 }

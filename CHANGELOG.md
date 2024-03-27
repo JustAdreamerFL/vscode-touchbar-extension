@@ -1,15 +1,11 @@
 # Change Log
 
-### 1.0.3
-- Update grouping tools
+### 1.0.5
+- Added Flutter pub get button under FlutterTools category
+- Updated md files to represent these recent changes that I made
 
-### 1.0.2
-- Updating screenshot
+### 1.0.4
+- Changed flutter build emojis
+- Added Git Stash
 
-### 1.0.1
-- Add DevTools
-- Grouping Clean & Devtools to Flutter Tools
-
-### 1.0.0
-
-Initial release of flutter-helper
+### Forked with all previous updates from [Flutter Touchbar Helper](https://github.com/yusriltakeuchi/vscode-touchbar-extension)
