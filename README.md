@@ -11,19 +11,23 @@ Read the features bellow ⬇
 - Flutter Build Appbundle
 - Flutter Build Split per ABI
 - Flutter DevTools
+- Flutter Build Web 
+### Firebase
+- Deploy to web hosting
 ### Git
 - Git Commit
 - Git Push
 - Git Stash
 
-<!-- 
-![Screenshot Main]("")
-![Screenshot Git]("")
-![Screenshot Tools]("")
-![Screensho𐬇t Build]("") -->
+
+
 
 
 ## Release Notes
+
+### 1.0.6
+- Added Flutter build web
+- Added Firebase deploy to web hosting
 
 ### 1.0.5
 - Added Flutter pub get button under FlutterTools category

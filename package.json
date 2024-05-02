@@ -2,7 +2,7 @@
   "name": "vscode-touchbar-extension",
   "displayName": "VSCodeTouchbar Extension",
   "description": "Flutter and Git commands. Fork of flutter-touchbar-tools",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "publisher": "JustAdreamerFL",
   "activationEvents": [
     "onCommand:vscode-touchbar-extension.fluttertools",
@@ -18,7 +18,8 @@
     "onCommand:vscode-touchbar-extension.gitstash",
     "onCommand:vscode-touchbar-extension.build.singleapk",
     "onCommand:vscode-touchbar-extension.build.singleappbundle",
-    "onCommand:vscode-touchbar-extension.build.splitabi"
+    "onCommand:vscode-touchbar-extension.build.splitabi",
+    "onCommand:vscode-touchbar-extension.firebasedeploy"
   ],
   "engines": {
     "vscode": "^1.52.0"
@@ -91,7 +92,7 @@
       },
       {
         "command": "vscode-touchbar-extension.devtools",
-        "title": "🔥 DevTools"
+        "title": "🔬 DevTools"
       },
       {
         "command": "vscode-touchbar-extension.flutterclean",
@@ -120,6 +121,10 @@
       {
         "command": "vscode-touchbar-extension.build.splitabi",
         "title": "🖖 Split"
+      },
+      {
+        "command": "vscode-touchbar-extension.firebasedeploy",
+        "title": "🕸️ Web"
       },
       {
         "command": "vscode-touchbar-extension.closebuild",
@@ -200,6 +205,11 @@
         },
         {
           "command": "vscode-touchbar-extension.build.splitabi",
+          "group": "tools",
+          "when": "enableBuild"
+        },
+        {
+          "command": "vscode-touchbar-extension.firebasedeploy",
           "group": "tools",
           "when": "enableBuild"
         }

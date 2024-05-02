@@ -1,4 +1,8 @@
-# Change Log
+# Change log
+
+### 1.0.6
+- Added Flutter build web
+- Added Firebase deploy to web hosting
 
 ### 1.0.5
 - Added Flutter pub get button under FlutterTools category

@@ -5,6 +5,7 @@ import * as vscode from 'vscode';
 // your extension is activated the very first time the command is executed
 
 export function activate(context: vscode.ExtensionContext) {
+	///// MOVING IN UI
 	/// Activate flutter build
 	const buildFlutter = vscode.commands.registerCommand('vscode-touchbar-extension.flutterbuild', () => {
 		vscode.commands.executeCommand('setContext', 'enableBuild', true);
@@ -34,23 +35,8 @@ export function activate(context: vscode.ExtensionContext) {
 		vscode.commands.executeCommand('setContext', 'enableGit', true);
 	});
 
-	// Git commit 
-	const commit = vscode.commands.registerCommand('vscode-touchbar-extension.gitcommit', () => {
-		vscode.commands.executeCommand('git.commit');
-		vscode.commands.executeCommand('setContext', 'enableGit', false);
-	});
 
-	/// Git push
-	const push = vscode.commands.registerCommand('vscode-touchbar-extension.gitpush', () => {
-		vscode.commands.executeCommand('git.push');
-		vscode.commands.executeCommand('setContext', 'enableGit', false);
-	});
-	/// Git stash
-	const stash = vscode.commands.registerCommand('vscode-touchbar-extension.gitstash', () => {
-		vscode.commands.executeCommand('git.stash');
-		vscode.commands.executeCommand('setContext', 'enableGit', false);
-	});
-
+	///// FLUTTER TOOLS
 	/// Activate build single apk
 	const buildSingleApk = vscode.commands.registerCommand('vscode-touchbar-extension.build.singleapk', () => {
 		vscode.commands.executeCommand('setContext', 'enableBuild', false);
@@ -92,13 +78,42 @@ export function activate(context: vscode.ExtensionContext) {
 		terminal.sendText("flutter pub global run devtools");
 
 	});
+	// Activate flutter pub get
 	const flutterPubGet = vscode.commands.registerCommand('vscode-touchbar-extension.flutterpubget', () => {
 		const terminal = vscode.window.createTerminal('Flutter Pub Get Terminal');
 		terminal.show();
 		terminal.sendText("flutter pub get");
 	});
 
-	context.subscriptions.push(cleanFlutter, flutterPubGet, buildFlutter, buildSingleApk, buildSingleAppbundle, buildSplitABI, closeBuild, git, closeGit, commit, push, stash, openTools, closeTools, devtools);
+	///// FIREBASE TOOLS
+	// Activate firebase deploy
+	const firebaseDeploy = vscode.commands.registerCommand('vscode-touchbar-extension.firebasedeploy', () => {
+		const terminal = vscode.window.createTerminal('Build Web and Deploy Firebase Terminal');
+		terminal.show();
+		terminal.sendText("flutter build web");
+		terminal.sendText("firebase deploy --only hosting");
+	});
+
+	///// GIT TOOLS
+
+	// Activate git commit 
+	const commit = vscode.commands.registerCommand('vscode-touchbar-extension.gitcommit', () => {
+		vscode.commands.executeCommand('git.commit');
+		vscode.commands.executeCommand('setContext', 'enableGit', false);
+	});
+
+	/// Activate git push
+	const push = vscode.commands.registerCommand('vscode-touchbar-extension.gitpush', () => {
+		vscode.commands.executeCommand('git.push');
+		vscode.commands.executeCommand('setContext', 'enableGit', false);
+	});
+	/// Activate git stash
+	const stash = vscode.commands.registerCommand('vscode-touchbar-extension.gitstash', () => {
+		vscode.commands.executeCommand('git.stash');
+		vscode.commands.executeCommand('setContext', 'enableGit', false);
+	});
+
+	context.subscriptions.push(cleanFlutter, flutterPubGet, buildFlutter, buildSingleApk, buildSingleAppbundle, buildSplitABI, closeBuild, firebaseDeploy, git, closeGit, commit, push, stash, openTools, closeTools, devtools);
 }
 
 // this method is called when your extension is deactivated
