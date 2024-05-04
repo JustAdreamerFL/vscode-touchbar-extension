@@ -24,7 +24,7 @@
   "engines": {
     "vscode": "^1.52.0"
   },
-  "repository": "https://github.com/JustAdreamerFL/VS-Code-Touchbar-Extension",
+  "repository": "https://github.com/JustAdreamerFL/vscode-touchbar-extension",
   "categories": [
     "Other"
   ],

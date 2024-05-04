@@ -8,10 +8,10 @@ Read the features bellow ⬇
 - Flutter Clean
 - Flutter Pub Get
 - Flutter Build Single APK
+- Flutter Build Web 
 - Flutter Build Appbundle
 - Flutter Build Split per ABI
 - Flutter DevTools
-- Flutter Build Web 
 ### Firebase
 - Deploy to web hosting
 ### Git
