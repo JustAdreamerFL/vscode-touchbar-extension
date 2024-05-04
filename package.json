@@ -1,9 +1,9 @@
 {
   "name": "vscode-touchbar-extension",
-  "displayName": "VSCodeTouchbar Extension",
+  "displayName": "Touchbar Flutter Commands",
   "description": "Flutter and Git commands. Fork of flutter-touchbar-tools",
   "version": "1.0.6",
-  "publisher": "JustAdreamerFL",
+  "publisher": "JustAdreamer",
   "activationEvents": [
     "onCommand:vscode-touchbar-extension.fluttertools",
     "onCommand:vscode-touchbar-extension.flutterclean",
@@ -134,21 +134,6 @@
     "menus": {
       "touchBar": [
         {
-          "command": "vscode-touchbar-extension.closebuild",
-          "group": "tools",
-          "when": "enableBuild"
-        },
-        {
-          "command": "vscode-touchbar-extension.closegit",
-          "group": "git-action",
-          "when": "enableGit"
-        },
-        {
-          "command": "vscode-touchbar-extension.closetools",
-          "group": "tools",
-          "when": "enableTools"
-        },
-        {
           "command": "vscode-touchbar-extension.git",
           "group": "gittools",
           "when": "!enableGit && !enableBuild && !enableTools"
@@ -159,19 +144,34 @@
           "when": "enableGit"
         },
         {
-          "command": "vscode-touchbar-extension.gitpush",
-          "group": "git-action",
-          "when": "enableGit"
-        },
-        {
           "command": "vscode-touchbar-extension.gitstash",
           "group": "git-action",
           "when": "enableGit"
         },
         {
+          "command": "vscode-touchbar-extension.gitpush",
+          "group": "git-action",
+          "when": "enableGit"
+        },
+        {
+          "command": "vscode-touchbar-extension.closegit",
+          "group": "git-action",
+          "when": "enableGit"
+        },
+        {
+          "command": "vscode-touchbar-extension.closebuild",
+          "group": "tools",
+          "when": "enableBuild"
+        },
+        {
           "command": "vscode-touchbar-extension.fluttertools",
           "group": "tools",
           "when": "!enableBuild && !enableGit && !enableTools"
+        },
+        {
+          "command": "vscode-touchbar-extension.devtools",
+          "group": "tools",
+          "when": "enableTools"
         },
         {
           "command": "vscode-touchbar-extension.flutterclean",
@@ -184,7 +184,7 @@
           "when": "enableTools"
         },
         {
-          "command": "vscode-touchbar-extension.devtools",
+          "command": "vscode-touchbar-extension.closetools",
           "group": "tools",
           "when": "enableTools"
         },
