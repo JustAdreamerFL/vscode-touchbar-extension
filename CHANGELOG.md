@@ -1,4 +1,9 @@
 # Change log
+### 1.0.8
+- Build web now builds with --wasm args
+
+### 1.0.7
+- Fixed some .md stuff
 
 ### 1.0.6
 - Added Flutter build web

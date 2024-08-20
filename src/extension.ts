@@ -90,7 +90,7 @@ export function activate(context: vscode.ExtensionContext) {
 	const firebaseDeploy = vscode.commands.registerCommand('vscode-touchbar-extension.firebasedeploy', () => {
 		const terminal = vscode.window.createTerminal('Build Web and Deploy Firebase Terminal');
 		terminal.show();
-		terminal.sendText("flutter build web");
+		terminal.sendText("flutter build web --wasm");
 		terminal.sendText("firebase deploy --only hosting");
 	});
 

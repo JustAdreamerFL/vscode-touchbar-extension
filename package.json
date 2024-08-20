@@ -2,7 +2,7 @@
   "name": "vscode-touchbar-extension",
   "displayName": "Touchbar Flutter Commands",
   "description": "Flutter and Git commands. Fork of flutter-touchbar-tools",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "publisher": "JustAdreamer",
   "activationEvents": [
     "onCommand:vscode-touchbar-extension.fluttertools",
