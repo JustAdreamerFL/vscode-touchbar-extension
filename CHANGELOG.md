@@ -1,4 +1,6 @@
 # Change log
+### 1.0.9
+- Nothing added
 ### 1.0.8
 - Build web now builds with --wasm args
 
